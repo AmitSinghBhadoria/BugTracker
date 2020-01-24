@@ -1,21 +1,115 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container register">
+  <div class="row">
+      <div class="col-md-3 register-left">
+          <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+          <h3>Welcome</h3>
+          <p>You are 30 seconds away from earning your own money!</p>
+          <input type="submit" name="" value="Login"/><br/>
+      </div>
+      <div class="col-md-9 register-right">
+          <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <h3 class="register-heading">Apply as a Employee</h3>
+                  <div class="row register-form">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="First Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Password *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <div class="maxl">
+                                  <label class="radio inline"> 
+                                      <input type="radio" name="gender" value="male" checked>
+                                      <span> Male </span> 
+                                  </label>
+                                  <label class="radio inline"> 
+                                      <input type="radio" name="gender" value="female">
+                                      <span>Female </span> 
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <select class="form-control">
+                                  <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                  <option>What is your Birthdate?</option>
+                                  <option>What is Your old Phone Number</option>
+                                  <option>What is your Pet Name?</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                          </div>
+                          <input type="submit" class="btnRegister"  value="Register"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <h3  class="register-heading">Apply as a Hirer</h3>
+                  <div class="row register-form">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="First Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                          </div>
 
-<router-outlet></router-outlet>
+
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Password *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <select class="form-control">
+                                  <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                  <option>What is your Birthdate?</option>
+                                  <option>What is Your old Phone Number</option>
+                                  <option>What is your Pet Name?</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                          </div>
+                          <input type="submit" class="btnRegister"  value="Register"/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
